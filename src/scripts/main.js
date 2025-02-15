@@ -4,7 +4,7 @@
 const inputs = document.querySelectorAll('input');
 
 for (const input of inputs) {
-  input.setAttribute('placeholder', corectName(input.name));
+  input.setAttribute('placeholder', correctName(input.name));
 
   const label = document.createElement('label');
 
@@ -15,7 +15,7 @@ for (const input of inputs) {
   input.before(label);
 }
 
-function corectName(str) {
+function correctName(str) {
   const newStr = str
     .split('')
     .map((el, i) => {
